@@ -1,5 +1,5 @@
-import { FadeIn } from '@/shared/animations';
-import { ArrowDown } from 'lucide-react';
+import {FadeIn} from '@/shared/animations';
+import {ArrowDown} from 'lucide-react';
 import React from 'react';
 
 import Typewriter from 'typewriter-effect';
@@ -51,7 +51,7 @@ const Main: React.FC = () => {
           {/* Декоративные линии */}
           <div className='absolute -left-10 top-0 w-px bg-gradient-to-b from-transparent via-gray-600 to-transparent'></div>
 
-          <FadeIn delay={1.1}>
+          <FadeIn delay={0.2}>
             <div className='group relative pl-8 hover:pl-10 transition-all duration-300'>
               <div className='absolute left-0 top-1 h-5 w-5 rounded-full bg-red-400 opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all'></div>
               <div className='absolute left-[9px] top-6 h-full w-px bg-red-400'></div>
@@ -70,7 +70,7 @@ const Main: React.FC = () => {
             </div>
           </FadeIn>
 
-          <FadeIn delay={1.3}>
+          <FadeIn delay={0.4}>
             <div className='group relative pl-8 hover:pl-10 transition-all duration-300'>
               <div className='absolute left-0 top-1 h-5 w-5 rounded-full bg-orange-400 opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all'></div>
               <div className='absolute left-[9px] top-6 h-full w-px bg-orange-400'></div>
@@ -91,7 +91,7 @@ const Main: React.FC = () => {
             </div>
           </FadeIn>
 
-          <FadeIn delay={1.5}>
+          <FadeIn delay={0.6}>
             <div className='group relative pl-8 hover:pl-10 transition-all duration-300'>
               <div className='absolute left-0 top-1 h-5 w-5 rounded-full bg-cyan-400 opacity-80 group-hover:opacity-100 group-hover:scale-125 transition-all'></div>
               <div className='absolute left-[9px] top-6 h-full w-px bg-cyan-400'></div>
@@ -107,7 +107,7 @@ const Main: React.FC = () => {
             </div>
           </FadeIn>
 
-          <FadeIn delay={1.7}>
+          <FadeIn delay={0.8}>
             <div className='mt-12 pt-8 border-t border-gray-700 relative'>
               <p className='mb-4 text-gray-300'>
                 Также имею опыт работы с{' '}

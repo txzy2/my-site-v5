@@ -2,7 +2,6 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { FadeIn } from '@/shared/animations';
-import Header from './Header';
 
 /**
  * The Layout component serves as the main structure of the application.
