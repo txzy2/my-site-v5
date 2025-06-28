@@ -1,7 +1,7 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 
-import { FadeIn } from '@/shared/animations';
+import {FadeIn} from '@/shared/animations';
 
 /**
  * The Layout component serves as the main structure of the application.
@@ -16,8 +16,8 @@ const Layout: React.FC = () => {
     <>
       <Outlet />
 
-      <footer>
-        <div className='h-[5vh] text-[13px] flex items-center justify-center gap-1'>
+      <footer className='h-[5vh] text-[13px] flex items-center justify-center relative'>
+        <div className='flex items-center justify-center gap-1'>
           created by
           <FadeIn delay={1.5}>
             <span className='font-bold text-orange-400'>txzy </span>
