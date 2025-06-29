@@ -172,7 +172,7 @@ const Main: React.FC = () => {
         </div>
 
         <div
-          className='space-y-6 flex flex-col h-[95vh] w-[80%] max-w-2xl justify-center relative'
+          className='space-y-6 flex flex-col h-screen w-[80%] max-w-2xl justify-center relative'
           id='section3'
         >
           {/* Проект 1 - Карточка с иконкой */}
