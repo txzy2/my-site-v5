@@ -1,4 +1,3 @@
-import { FadeIn } from '@/shared/animations';
 import { GithubIcon } from 'lucide-react';
 
 const Section3 = () => {
@@ -11,7 +10,7 @@ const Section3 = () => {
         <p className='text-sm text-gray-400 mt-1 pl-1'>Избранные реализации</p>
       </div>
 
-      <FadeIn delay={0.2}>
+      <div>
         <div className='group relative overflow-hidden rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-500'>
           <div className='absolute -right-20 -top-20 w-40 h-40 rounded-full bg-purple-500/10 group-hover:bg-purple-500/20 transition-all duration-700'></div>
           <div className='p-6 relative'>
@@ -53,15 +52,12 @@ const Section3 = () => {
                 <GithubIcon className='w-4 h-4' />
                 Исходный код
               </a>
-              <span className='text-xs px-3 py-1 rounded-full bg-gray-800 text-gray-400'>
-                В активной разработке
-              </span>
             </div>
           </div>
         </div>
-      </FadeIn>
+      </div>
       {/* Сервис логирования */}
-      <FadeIn delay={0.3}>
+      <div >
         <div className='border border-gray-700 rounded-xl overflow-hidden group hover:border-amber-500 transition-colors'>
           <div className='bg-gradient-to-r from-gray-900 to-gray-800 p-6'>
             <div className='flex items-start gap-4'>
@@ -144,9 +140,9 @@ const Section3 = () => {
             </div>
           </div>
         </div>
-      </FadeIn>
+      </div>
       {/* Stockhub Bot */}
-      <FadeIn delay={0.4}>
+      <div>
         <div className='group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl border border-gray-700 hover:border-cyan-400 transition-colors p-6'>
           <div className='relative z-10'>
             <div className='flex items-center gap-3 mb-4'>
@@ -212,7 +208,7 @@ const Section3 = () => {
             </a>
           </div>
         </div>
-      </FadeIn>
+      </div>
     </>
   );
 };

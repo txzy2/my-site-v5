@@ -17,7 +17,7 @@ const Layout: React.FC = () => {
       <Outlet />
       <footer className='h-[15vh] min-h-[120px] flex flex-col items-center justify-center mt-20 relative border-t border-gray-800 bg-gradient-to-t from-gray-900/50 to-transparent'>
         <div className='flex flex-col items-center gap-4 w-full'>
-          <FadeIn delay={0.8}>
+          <div>
             <div className='flex items-center justify-center gap-5'>
               <a
                 href='https://github.com/txzy2'
@@ -59,9 +59,9 @@ const Layout: React.FC = () => {
                 <img src='./vk.svg' alt='vk' width={20} />
               </a>
             </div>
-          </FadeIn>
+          </div>
 
-          <FadeIn delay={1.2}>
+          <FadeIn delay={0.3}>
             <div className='text-[13px] text-gray-400 flex items-center gap-1'>
               crafted by
               <code className='font-bold text-orange-400'>txzy</code>
