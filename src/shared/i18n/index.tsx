@@ -103,7 +103,10 @@ const ru = {
   'term.contactText':
     'GitHub: github.com/txzy2 · Telegram и VK — в футере ниже.',
   'theme.light': 'Светлая',
-  'theme.dark': 'Тёмная'
+  'theme.dark': 'Тёмная',
+  'settings.title': 'Настройки',
+  'settings.theme': 'Тема',
+  'settings.language': 'Язык'
 } as const;
 
 export type TranslationKey = keyof typeof ru;
@@ -202,7 +205,10 @@ const en: Record<TranslationKey, string> = {
   'term.contactText':
     'GitHub: github.com/txzy2 · Telegram and VK in the footer below.',
   'theme.light': 'Light',
-  'theme.dark': 'Dark'
+  'theme.dark': 'Dark',
+  'settings.title': 'Settings',
+  'settings.theme': 'Theme',
+  'settings.language': 'Language'
 };
 
 const translations: Record<Language, Record<TranslationKey, string>> = {
