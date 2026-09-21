@@ -9,7 +9,7 @@ const FallingStars: React.FC = () => {
       {stars.map((_, index) => (
         <motion.div
           key={index}
-          className='absolute star w-[10px] h-[10px] bg-gray-400 rounded-sm'
+          className='absolute star w-[10px] h-[10px] bg-muted rounded-sm'
           initial={{y: -50, opacity: 0}}
           animate={{y: '85vh', opacity: [1, 0.4, 0]}}
           transition={{

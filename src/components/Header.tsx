@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 import { Hover } from '@/shared/animations';
 import { IHeaderLinks, list } from '@/shared/constants/links';
+import { useI18n } from '@/shared/i18n';
 
 const Header: React.FC = () => {
   const [links, SetLinks] = useState<IHeaderLinks[]>();
+  const { t } = useI18n();
 
   useEffect(() => {
     console.log(list);
@@ -26,8 +28,8 @@ const Header: React.FC = () => {
             {links &&
               links.map((i: IHeaderLinks) => (
                 <Hover scale={1.05}>
-                  <li key={i.title}>
-                    <a href={i.link}>{i.title}</a>
+                  <li key={i.titleKey}>
+                    <a href={i.link}>{t(i.titleKey)}</a>
                   </li>
                 </Hover>
               ))}

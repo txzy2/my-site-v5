@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { FadeIn } from '@/shared/animations';
+import { useI18n } from '@/shared/i18n';
 
 /**
  * The Layout component serves as the main structure of the application.
@@ -12,10 +13,12 @@ import { FadeIn } from '@/shared/animations';
  * @returns {JSX.Element} The rendered Layout component.
  */
 const Layout: React.FC = () => {
+  const { t } = useI18n();
+
   return (
     <>
       <Outlet />
-      <footer className='h-[15vh] min-h-[120px] flex flex-col items-center justify-center mt-20 relative border-t border-gray-800 bg-gradient-to-t from-gray-900/50 to-transparent'>
+      <footer className='h-[15vh] min-h-[120px] flex flex-col items-center justify-center mt-20 relative border-t border-line bg-gradient-to-t from-surface/50 to-transparent'>
         <div className='flex flex-col items-center gap-4 w-full'>
           <div>
             <div className='flex items-center justify-center gap-5'>
@@ -23,11 +26,11 @@ const Layout: React.FC = () => {
                 href='https://github.com/txzy2'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='p-2 rounded-lg bg-gray-800 border border-gray-700 hover:border-purple-400 hover:text-purple-400 transition-all group'
+                className='p-2 rounded-lg bg-elevated border border-line hover:border-muted hover:text-strong transition-all group'
                 aria-label='GitHub'
               >
                 <svg
-                  className='w-5 h-5 text-gray-400 group-hover:text-purple-400 transition-colors'
+                  className='w-5 h-5 text-muted group-hover:text-strong transition-colors'
                   fill='currentColor'
                   viewBox='0 0 24 24'
                 >
@@ -43,7 +46,7 @@ const Layout: React.FC = () => {
                 href='https://t.me/your_telegram'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='p-2 rounded-lg bg-gray-800 border border-gray-700 hover:border-blue-400 hover:text-blue-400 transition-all group'
+                className='p-2 rounded-lg bg-elevated border border-line hover:border-muted hover:text-strong transition-all group'
                 aria-label='Telegram'
               >
                 <img src='./tg.svg' alt='tg' width={20} />
@@ -53,7 +56,7 @@ const Layout: React.FC = () => {
                 href='https://vk.com/your_profile'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='p-2 rounded-lg bg-gray-800 border border-gray-700 hover:border-cyan-400 hover:text-cyan-400 transition-all group'
+                className='p-2 rounded-lg bg-elevated border border-line hover:border-muted hover:text-strong transition-all group'
                 aria-label='VK'
               >
                 <img src='./vk.svg' alt='vk' width={20} />
@@ -62,8 +65,8 @@ const Layout: React.FC = () => {
           </div>
 
           <FadeIn delay={0.3}>
-            <div className='text-[13px] text-gray-400 flex items-center gap-1'>
-              crafted by
+            <div className='text-[13px] text-muted flex items-center gap-1'>
+              {t('footer.crafted')}
               <code className='font-bold text-orange-400'>txzy</code>
               {new Date().getFullYear()}
             </div>
@@ -71,7 +74,7 @@ const Layout: React.FC = () => {
         </div>
 
         {/* Декоративный элемент */}
-        <div className='absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent'></div>
+        <div className='absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-line to-transparent'></div>
       </footer>{' '}
     </>
   );

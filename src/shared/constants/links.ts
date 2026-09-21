@@ -1,10 +1,12 @@
+import type { TranslationKey } from '@/shared/i18n';
+
 export interface IHeaderLinks {
-  title: string;
+  titleKey: TranslationKey;
   link: string;
 }
 
 export const list: IHeaderLinks[] = [
-  { title: 'Главная', link: '/' },
-  { title: 'Проекты', link: '#about' },
-  { title: 'Новости', link: '/news' }
+  { titleKey: 'nav.home', link: '/' },
+  { titleKey: 'nav.projects', link: '#about' },
+  { titleKey: 'nav.news', link: '/news' }
 ];
