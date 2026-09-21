@@ -51,7 +51,7 @@ const LoaderComponent: React.FC<LoaderProps> = props => {
 
         {props.sub && (
           <FadeIn delay={2}>
-            <a className='flex items-center' href='#'>
+            <a className='flex items-center'>
               <Hover scale={1.05}>
                 <img src='/logo2.png' alt='logo' width={80} />
               </Hover>

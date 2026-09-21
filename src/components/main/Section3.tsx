@@ -149,7 +149,6 @@ const Section3 = () => {
 
                 {project.link && (
                   <a
-                    href={project.link}
                     target='_blank'
                     rel='noopener noreferrer'
                     className='mt-auto inline-flex w-fit items-center gap-2 px-3 py-1.5 text-xs rounded-lg border border-line hover:border-muted hover:text-strong text-content transition-colors'

@@ -23,7 +23,6 @@ const Layout: React.FC = () => {
           <div>
             <div className='flex items-center justify-center gap-5'>
               <a
-                href='https://github.com/txzy2'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='p-2 rounded-lg bg-elevated border border-line hover:border-muted hover:text-strong transition-all group'
@@ -43,7 +42,6 @@ const Layout: React.FC = () => {
               </a>
 
               <a
-                href='https://t.me/your_telegram'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='p-2 rounded-lg bg-elevated border border-line hover:border-muted hover:text-strong transition-all group'
@@ -53,7 +51,6 @@ const Layout: React.FC = () => {
               </a>
 
               <a
-                href='https://vk.com/your_profile'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='p-2 rounded-lg bg-elevated border border-line hover:border-muted hover:text-strong transition-all group'

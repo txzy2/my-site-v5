@@ -29,7 +29,7 @@ const Header: React.FC = () => {
               links.map((i: IHeaderLinks) => (
                 <Hover scale={1.05}>
                   <li key={i.titleKey}>
-                    <a href={i.link}>{t(i.titleKey)}</a>
+                    <a>{t(i.titleKey)}</a>
                   </li>
                 </Hover>
               ))}

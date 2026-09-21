@@ -121,7 +121,6 @@ const Main: React.FC = () => {
                 <ArrowRight className='w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform' />
               </button>
               <a
-                href='https://github.com/txzy2'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='inline-flex items-center gap-2 px-4 py-2 text-xs rounded-lg border border-line text-content hover:border-muted hover:text-strong transition-colors'
