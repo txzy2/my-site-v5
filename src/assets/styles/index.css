@@ -3,35 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --base: 9 9 11;
-  --surface: 17 24 39;
-  --elevated: 31 41 55;
-  --line: 55 65 81;
-  --content: 209 213 219;
-  --muted: 156 163 175;
-  --strong: 229 231 235;
+  --base: 15 16 22;
+  --surface: 24 26 33;
+  --elevated: 35 38 48;
+  --line: 52 56 69;
+  --content: 184 190 204;
+  --muted: 132 139 156;
+  --strong: 226 231 242;
 
-  --brand: 192 132 252;
-  --brand2: 34 211 238;
+  --brand: 122 162 247;
+  --brand2: 115 218 202;
 
-  --color-bg: radial-gradient(circle at center, #333333, #000000);
-  --color-text: #f5f5f5;
+  --color-bg: radial-gradient(circle at center, #1b1d27, #0c0d12);
+  --color-text: #e2e7f2;
 }
 
 html.light {
-  --base: 249 250 251;
+  --base: 246 247 250;
   --surface: 255 255 255;
-  --elevated: 241 245 249;
-  --line: 203 213 225;
-  --content: 51 65 85;
-  --muted: 100 116 139;
-  --strong: 15 23 42;
+  --elevated: 240 242 247;
+  --line: 214 219 228;
+  --content: 55 63 79;
+  --muted: 108 117 134;
+  --strong: 17 24 39;
 
-  --brand: 37 99 235;
-  --brand2: 8 145 178;
+  --brand: 47 84 199;
+  --brand2: 13 148 136;
 
-  --color-bg: radial-gradient(circle at center, #ffffff, #e2e8f0);
-  --color-text: #0f172a;
+  --color-bg: radial-gradient(circle at center, #ffffff, #e8ebf1);
+  --color-text: #1a2233;
 }
 
 html {
@@ -57,24 +57,4 @@ body {
 a {
   font-weight: 500;
   text-decoration: inherit;
-}
-
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-
-    gap: 0;
-  }
-
-  .about__border {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-
-    margin: 10px 0;
-
-    border: none;
-  }
 }

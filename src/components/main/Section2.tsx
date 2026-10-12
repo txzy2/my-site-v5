@@ -120,20 +120,20 @@ const Section2 = () => {
   return (
     <>
       <div className='group relative inline-block' id='section2'>
-        <h2 className='text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand2'>
+        <h2 className='text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand2'>
           /tech_stack
         </h2>
         <div className='absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand to-brand2 group-hover:w-full transition-all duration-500'></div>
         <p className='text-sm text-muted mt-1'>{t('s2.subtitle')}</p>
       </div>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         {mainStack.map((item, i) => {
           const Icon = item.icon;
           return (
             <FadeIn key={item.titleKey} delay={0.2 + i * 0.15}>
               <div
-                className={`group relative h-full overflow-hidden rounded-xl border border-line ${item.border} bg-surface/40 p-5 transition-all duration-500 hover:-translate-y-1`}
+                className={`group relative h-full overflow-hidden rounded-xl border border-line ${item.border} bg-surface/40 p-6 transition-all duration-500 hover:-translate-y-1`}
               >
                 <div
                   className={`absolute -right-12 -top-12 h-32 w-32 rounded-full ${item.glow} blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`}
@@ -175,7 +175,7 @@ const Section2 = () => {
               {t('s2.arsenal')}
             </h3>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-3 gap-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-3 gap-6'>
             {toolGroups.map(group => {
               const GroupIcon = group.icon;
               return (

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowUp, Moon, Settings2, SquareTerminal, Sun } from 'lucide-react';
+import { ArrowUp, Moon, Settings2, Sun } from 'lucide-react';
 
-import Terminal from '@/components/main/Terminal';
 import { useI18n, type Language } from '@/shared/i18n';
 import { useTheme, type Theme } from '@/shared/theme';
 
@@ -19,7 +18,6 @@ const FloatingButtons = () => {
   const { t, lang, setLang } = useI18n();
   const { theme, setTheme } = useTheme();
   const [showTop, setShowTop] = useState(false);
-  const [terminalOpen, setTerminalOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
 
@@ -61,10 +59,10 @@ const FloatingButtons = () => {
         <div className='pointer-events-auto flex flex-col items-start gap-3'>
           <div ref={settingsRef} className='relative'>
             <div
-              className={`pointer-events-none absolute left-full top-1/2 z-50 ml-3 -translate-y-1/2 transition-all duration-300 ${settingsVisibility}`}
+              className={`pointer-events-none absolute bottom-0 left-full z-50 ml-3 transition-all duration-300 ${settingsVisibility}`}
             >
-              <div className='relative rounded-2xl bg-gradient-to-b from-line via-line/60 to-line/10 p-px shadow-2xl shadow-black/40'>
-                <div className='w-[13rem] rounded-[15px] bg-surface/95 p-2.5 backdrop-blur-xl'>
+              <div className='relative rounded-2xl border border-line bg-surface/95 shadow-2xl shadow-black/40 backdrop-blur-xl'>
+                <div className='w-[13rem] p-2.5'>
                   <p className='px-1 pb-1.5 text-[10px] font-semibold uppercase tracking-widest text-muted/80'>
                     {t('settings.theme')}
                   </p>
@@ -132,7 +130,7 @@ const FloatingButtons = () => {
                     })}
                   </div>
                 </div>
-                <span className='absolute -left-1 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rotate-45 rounded-[2px] border-b border-l border-line bg-surface/95' />
+                <span className='absolute -left-1 bottom-4 h-2.5 w-2.5 rotate-45 rounded-[2px] border-b border-l border-line bg-surface/95' />
               </div>
             </div>
 
@@ -147,14 +145,6 @@ const FloatingButtons = () => {
               <Settings2 className='h-4 w-4' />
             </button>
           </div>
-
-          <button
-            onClick={() => setTerminalOpen(true)}
-            aria-label={t('term.open')}
-            className='flex h-10 w-10 items-center justify-center rounded-full border border-line bg-surface/80 text-muted backdrop-blur transition-colors hover:border-brand hover:text-brand'
-          >
-            <SquareTerminal className='h-4 w-4' />
-          </button>
         </div>
 
         <button
@@ -169,8 +159,6 @@ const FloatingButtons = () => {
           <ArrowUp className='h-4 w-4' />
         </button>
       </div>
-
-      <Terminal open={terminalOpen} onClose={() => setTerminalOpen(false)} />
     </>
   );
 };

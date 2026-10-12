@@ -58,50 +58,53 @@ const ru = {
     'Боты со сложной бизнес-логикой, FSM и интеграцией платёжных систем.',
 
   's3.subtitle': 'Избранные реализации',
+  's3.open': 'Подробнее',
+  's3.close': 'Закрыть',
   's3.source': 'Исходный код',
   's3.queue': 'Очереди',
   's3.p1.title': 'Персональный сайт v5',
   's3.p1.desc':
     'Современное портфолио с анимациями и интерактивными элементами.',
+  's3.p1.details':
+    'Портфолио на React 18 и TypeScript со сборкой Vite. Светлая и тёмная темы через CSS-переменные, локализация RU/EN, анимации на Framer Motion и адаптивная вёрстка на Tailwind — без тяжёлых UI-библиотек.',
   's3.p1.highlight': 'React, Tailwind, Framer Motion',
   's3.p2.title': 'Laravel Logger Service',
   's3.p2.desc':
     'Микросервис для централизованного сбора ошибок с фильтрацией и уведомлениями.',
+  's3.p2.details':
+    'Сервис централизованного логирования: принимает ошибки из нескольких приложений, фильтрует и группирует их, мгновенно уведомляет в Telegram. Архитектура на принципах SOLID и GRASP, покрыт тестами, разворачивается в Docker.',
   's3.p2.highlight': 'SOLID и GRASP для масштабируемой архитектуры',
   's3.p3.title': 'Stockhub Bot',
   's3.p3.desc':
     'Telegram бот для продажи кроссовок с полноценным e-commerce в мессенджере.',
+  's3.p3.details':
+    'Telegram-бот для продажи кроссовок с полноценным магазином внутри мессенджера: каталог, корзина, оплата и админ-панель. Клиент — React и Vite (Web App), сервер — NestJS с PostgreSQL.',
   's3.p3.highlight': 'React + Vite (Web App) и NestJS бэкенд',
   's3.p4.title': 'CRM для кальянных',
   's3.p4.desc':
     'Система управления для сети кальянных: заказы, склад табака, смены и лояльность.',
+  's3.p4.details':
+    'CRM для сети кальянных: заказы гостей, учёт склада табака, смены сотрудников и программа лояльности. Аналитика продаж в реальном времени по филиалам, фоновая обработка задач через Redis и очереди.',
   's3.p4.highlight':
     'Аналитика продаж и контроль филиалов в реальном времени',
+
+  's4.subtitle': 'Опыт и карьера',
+  's4.e1.period': '2025 — настоящее время',
+  's4.e1.role': 'Fullstack-разработчик (Symfony)',
+  's4.e1.company': 'M2Lab',
+  's4.e1.desc': 'Fullstack-разработка на Symfony.',
+  's4.e2.period': '2023 — 2025',
+  's4.e2.role': 'Backend-разработчик (PHP / Laravel)',
+  's4.e2.company': '1С Рарус · Тиражные решения',
+  's4.e2.desc': 'Разрабатывал тиражные решения на PHP и Laravel.',
+  's4.e3.period': '2022 — 2023',
+  's4.e3.role': 'Фронтенд-разработчик (Angular)',
+  's4.e3.desc': 'Разрабатывал клиентские интерфейсы на Angular.',
 
   'footer.crafted': 'сделано',
   'notfound.title': 'Извините, страница не найдена :(',
   'notfound.home': 'На главную',
 
-  'term.open': 'Терминал',
-  'term.close': 'Свернуть',
-  'term.welcome':
-    'Добро пожаловать! Введите "help", чтобы увидеть список команд.',
-  'term.placeholder': 'Введите команду…',
-  'term.notFound': 'команда не найдена',
-  'term.helpTitle': 'Доступные команды:',
-  'term.descHelp': 'список команд',
-  'term.descWhoami': 'кто я',
-  'term.descStack': 'мой стек',
-  'term.descProjects': 'проекты',
-  'term.descContact': 'контакты',
-  'term.descClear': 'очистить',
-  'term.whoami':
-    'Антон — backend-разработчик. Строю масштабируемые сервисы на NestJS, Laravel и TypeScript.',
-  'term.stackTitle': 'Стек:',
-  'term.projectsTitle': 'Проекты:',
-  'term.contactTitle': 'Контакты:',
-  'term.contactText':
-    'GitHub: github.com/txzy2 · Telegram и VK — в футере ниже.',
   'theme.light': 'Светлая',
   'theme.dark': 'Тёмная',
   'settings.title': 'Настройки',
@@ -161,49 +164,53 @@ const en: Record<TranslationKey, string> = {
     'Bots with complex business logic, FSM and payment system integration.',
 
   's3.subtitle': 'Featured work',
+  's3.open': 'Details',
+  's3.close': 'Close',
   's3.source': 'Source code',
   's3.queue': 'Queues',
   's3.p1.title': 'Personal site v5',
   's3.p1.desc':
     'Modern portfolio with animations and interactive elements.',
+  's3.p1.details':
+    'Portfolio built with React 18 and TypeScript on top of Vite. Light/dark themes via CSS variables, RU/EN localization, Framer Motion animations and a responsive Tailwind layout — without heavy UI libraries.',
   's3.p1.highlight': 'React, Tailwind, Framer Motion',
   's3.p2.title': 'Laravel Logger Service',
   's3.p2.desc':
     'Microservice for centralized error collection with filtering and notifications.',
+  's3.p2.details':
+    'Centralized logging service: ingests errors from multiple applications, filters and groups them, and sends instant Telegram notifications. Built on SOLID and GRASP principles, covered with tests and deployed with Docker.',
   's3.p2.highlight': 'SOLID and GRASP for a scalable architecture',
   's3.p3.title': 'Stockhub Bot',
   's3.p3.desc':
     'Telegram bot for selling sneakers with full e-commerce inside the messenger.',
+  's3.p3.details':
+    'Telegram bot for selling sneakers with a full store inside the messenger: catalog, cart, payments and an admin panel. Client — React and Vite (Web App), server — NestJS with PostgreSQL.',
   's3.p3.highlight': 'React + Vite (Web App) and NestJS backend',
   's3.p4.title': 'Hookah Lounge CRM',
   's3.p4.desc':
     'Management system for a hookah lounge chain: orders, tobacco stock, shifts and loyalty.',
+  's3.p4.details':
+    'CRM for a hookah lounge chain: guest orders, tobacco stock, staff shifts and a loyalty program. Real-time sales analytics per branch, with background job processing via Redis and queues.',
   's3.p4.highlight':
     'Real-time sales analytics and branch control',
+
+  's4.subtitle': 'Experience & career',
+  's4.e1.period': '2025 — present',
+  's4.e1.role': 'Fullstack Developer (Symfony)',
+  's4.e1.company': 'M2Lab',
+  's4.e1.desc': 'Fullstack development on Symfony.',
+  's4.e2.period': '2023 — 2025',
+  's4.e2.role': 'Backend Developer (PHP / Laravel)',
+  's4.e2.company': '1C Rarus · Turnkey solutions',
+  's4.e2.desc': 'Developed turnkey solutions with PHP and Laravel.',
+  's4.e3.period': '2022 — 2023',
+  's4.e3.role': 'Frontend Developer (Angular)',
+  's4.e3.desc': 'Built client interfaces with Angular.',
 
   'footer.crafted': 'crafted by',
   'notfound.title': 'Sorry, but page is not found :(',
   'notfound.home': 'Home',
 
-  'term.open': 'Terminal',
-  'term.close': 'Collapse',
-  'term.welcome': 'Welcome! Type "help" to see the list of commands.',
-  'term.placeholder': 'Type a command…',
-  'term.notFound': 'command not found',
-  'term.helpTitle': 'Available commands:',
-  'term.descHelp': 'list commands',
-  'term.descWhoami': 'who am i',
-  'term.descStack': 'my stack',
-  'term.descProjects': 'projects',
-  'term.descContact': 'contacts',
-  'term.descClear': 'clear',
-  'term.whoami':
-    'Anton — backend developer. I build scalable services with NestJS, Laravel and TypeScript.',
-  'term.stackTitle': 'Stack:',
-  'term.projectsTitle': 'Projects:',
-  'term.contactTitle': 'Contacts:',
-  'term.contactText':
-    'GitHub: github.com/txzy2 · Telegram and VK in the footer below.',
   'theme.light': 'Light',
   'theme.dark': 'Dark',
   'settings.title': 'Settings',

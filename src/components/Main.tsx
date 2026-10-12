@@ -7,13 +7,14 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Section2 from './main/Section2';
 import Section3 from './main/Section3';
+import Section4 from './main/Section4';
 
 const Main: React.FC = () => {
   const { t, lang } = useI18n();
   return (
-    <div className='text-[14px] relative overflow-hidden'>
-      <div className='flex flex-col justify-center items-center gap-2'>
-        <div className='min-h-screen flex flex-col justify-center items-center gap-4 relative'>
+    <div className='text-[15px] relative overflow-hidden'>
+      <div className='flex flex-col justify-center items-center'>
+        <div className='min-h-screen w-full flex flex-col justify-center items-center gap-5 px-6 relative'>
           <div className='pointer-events-none absolute inset-0 -z-10 overflow-hidden'>
             <motion.div
               className='absolute left-1/3 top-1/4 h-72 w-72 rounded-full bg-brand/20 blur-[100px]'
@@ -38,7 +39,7 @@ const Main: React.FC = () => {
             </div>
           </FadeIn>
 
-          <h1 className='text-2xl font-bold text-content'>
+          <h1 className='text-3xl sm:text-4xl font-bold text-content tracking-tight'>
             <Typewriter
               key={`greeting-${lang}`}
               onInit={typewriter => {
@@ -56,7 +57,7 @@ const Main: React.FC = () => {
           </h1>
 
           <FadeIn delay={0.6}>
-            <h2 className='text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand2'>
+            <h2 className='text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand2'>
               <Typewriter
                 key={`roles-${lang}`}
                 options={{
@@ -75,7 +76,7 @@ const Main: React.FC = () => {
           </FadeIn>
 
           <FadeIn delay={0.9}>
-            <p className='text-[14px] leading-relaxed max-w-lg text-center text-content'>
+            <p className='text-[15px] leading-relaxed max-w-xl text-center text-content'>
               {t('hero.aboutPrefix')}
               <span className='text-brand2'>
                 {t('hero.aboutHighlight')}
@@ -85,7 +86,7 @@ const Main: React.FC = () => {
           </FadeIn>
 
           <FadeIn delay={1}>
-            <div className='flex flex-wrap justify-center gap-2 max-w-md'>
+            <div className='flex flex-wrap justify-center gap-2 max-w-lg'>
               {[
                 'TypeScript',
                 'PHP',
@@ -156,18 +157,22 @@ const Main: React.FC = () => {
                 behavior: 'smooth'
               });
             }}
-            className='absolute bottom-3 animate-bounce cursor-pointer'
+            className='absolute bottom-6 animate-bounce cursor-pointer'
           >
             <ArrowDown className='text-muted hover:text-strong transition-colors' />
           </button>
         </div>
 
-        <div className='space-y-6 flex flex-col min-h-screen w-[90%] mt-6 max-w-4xl justify-center relative'>
+        <div className='w-full max-w-6xl px-6 py-24 sm:py-28 flex flex-col gap-8 justify-center relative'>
           <Section2 />
         </div>
 
-        <div className='space-y-6 flex flex-col min-h-screen w-[90%] max-w-4xl justify-center relative'>
+        <div className='w-full max-w-6xl px-6 py-24 sm:py-28 flex flex-col gap-8 justify-center relative'>
           <Section3 />
+        </div>
+
+        <div className='w-full max-w-6xl px-6 py-24 sm:py-28 flex flex-col gap-8 justify-center relative'>
+          <Section4 />
         </div>
       </div>
     </div>

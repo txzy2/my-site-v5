@@ -1,1 +1,2 @@
-export {default as Loader} from './loader/Loader';
+export {default as ImageSlider} from './gallery/ImageSlider';
+export type {ImageSliderHandle} from './gallery/ImageSlider';
